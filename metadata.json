@@ -1,0 +1,7 @@
+{
+  "name": "Agentic AI Optimiser",
+  "description": "Train your agents, simplistically intuitive. An advanced AI-driven application to orchestrate, analyze, and optimize complex AI agent systems.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agentic AI Optimiser</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#0D1117',
+              surface: '#161B22',
+              primary: '#2F81F7',
+              'primary-hover': '#388BFD',
+              secondary: '#21262D',
+              'secondary-hover': '#2A3037',
+              border: '#30363D',
+              text: '#E6EDF3',
+              'text-secondary': '#8B949E',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ 
+        startOnLoad: false, 
+        theme: 'dark', 
+        darkMode: true,
+        themeVariables: {
+          'background': '#161B22',
+          'primaryColor': '#21262D',
+          'primaryTextColor': '#E6EDF3',
+          'lineColor': '#30363D',
+          'nodeBorder': '#2F81F7',
+        }
+      });
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-text font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
